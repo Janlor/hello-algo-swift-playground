@@ -77,10 +77,10 @@ class LinkedListQueue {
     
     /// 访问队首元素
     func peek() -> Int {
-        if isEmpty {
+        if isEmpty() {
             fatalError("队列为空")
         }
-        return front?.val
+        return front!.val
     }
     
     /// 将 List 转化为 Array 并返回
@@ -88,7 +88,7 @@ class LinkedListQueue {
         var node = front
         var res = Array(repeating: 0, count: _size)
         for i in res.indices {
-            res[i] = node?.val
+            res[i] = node!.val
             node = node?.next
         }
         return res
@@ -146,7 +146,7 @@ class ArrayQueue {
     
     /// 访问队首元素
     func peek() -> Int {
-        if isEmpty {
+        if isEmpty() {
             fatalError("队为空")
         }
         return nums[front]
@@ -156,7 +156,7 @@ class ArrayQueue {
     func toArray() -> [Int] {
         // 仅转换有效长度范围内的列表元素
         var res = Array(repeating: 0, count: queSize)
-        for (i, j) in sequence(first: (0, front), next: { %0 < self.queSize - 1 ? ($0 + 1, $1 + 1) : nil }) {
+        for (i, j) in sequence(first: (0, front), next: { $0 < self.queSize - 1 ? ($0 + 1, $1 + 1) : nil }) {
             res[i] = nums[j % capacity()]
         }
         return res
