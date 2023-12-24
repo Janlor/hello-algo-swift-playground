@@ -13,5 +13,6 @@
         <page name='5.3双向队列'/>
         <page name='6.1哈希表'/>
         <page name='6.2哈希冲突'/>
+        <page name='6.3哈希算法'/>
     </pages>
 </playground>
