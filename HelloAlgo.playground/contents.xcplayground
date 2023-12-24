@@ -14,5 +14,6 @@
         <page name='6.1哈希表'/>
         <page name='6.2哈希冲突'/>
         <page name='6.3哈希算法'/>
+        <page name='7.1二叉树'/>
     </pages>
 </playground>
