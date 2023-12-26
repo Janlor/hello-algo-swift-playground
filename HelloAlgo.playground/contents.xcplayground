@@ -16,5 +16,6 @@
         <page name='6.3哈希算法'/>
         <page name='7.1二叉树'/>
         <page name='7.2二叉树遍历'/>
+        <page name='7.3二叉树数组表示'/>
     </pages>
 </playground>
