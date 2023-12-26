@@ -25,10 +25,10 @@ func levelOrder(root: TreeNode) -> [Int] {
         let node = queue.removeFirst() // 队列出队
         list.append(node.val) // 保存节点值
         if let left = node.left {
-            queue.append(node.left) // 左子节点入队
+            queue.append(left) // 左子节点入队
         }
         if let right = node.right {
-            queue.append(node.right) // 右子节点入队
+            queue.append(right) // 右子节点入队
         }
     }
     return list
