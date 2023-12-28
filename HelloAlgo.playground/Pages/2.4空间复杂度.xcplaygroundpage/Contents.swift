@@ -119,16 +119,6 @@ func quadraticRecur(n: Int) -> Int {
 
 /* ---------------- */
 
-class TreeNode {
-    var x: Int
-    var left: TreeNode?
-    var right: TreeNode?
-    
-    init(x: Int) {
-        self.x = x
-    }
-}
-
 /// 指数阶（建立满二叉树）
 func buildTree(n: Int) -> TreeNode? {
     if n == 0 {

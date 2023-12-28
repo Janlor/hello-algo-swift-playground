@@ -2,24 +2,14 @@
 
 import Foundation
 
-/// 链表节点类
-class ListNode {
-    var val: Int // 节点值
-    var next: ListNode? // 指向下一节点的引用
-    init(val: Int, next: ListNode? = nil) { // 构造函数
-        self.val = val
-        self.next = next
-    }
-}
-
 /// 1. 初始化链表
 
 // 初始化各个节点
-let n0 = ListNode(val: 1)
-let n1 = ListNode(val: 3)
-let n2 = ListNode(val: 2)
-let n3 = ListNode(val: 5)
-let n4 = ListNode(val: 4)
+let n0 = ListNode(x: 1)
+let n1 = ListNode(x: 3)
+let n2 = ListNode(x: 2)
+let n3 = ListNode(x: 5)
+let n4 = ListNode(x: 4)
 // 构建引用指向
 n0.next = n1
 n1.next = n2

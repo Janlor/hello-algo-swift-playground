@@ -2,17 +2,6 @@
 
 import Foundation
 
-/// 二叉树节点类
-class TreeNode {
-    var val: Int // 节点值
-    var left: TreeNode? // 左子节点引用
-    var right: TreeNode? // 右子节点引用
-    
-    init(x: Int) {
-        self.val = x
-    }
-}
-
 /// 二叉搜索树
 class BinarySearchTree {
     private var root: TreeNode?
@@ -180,3 +169,4 @@ tree.search(num: 7)
 //tree.remove(num: 4)
 
 //: [Next](@next)
+

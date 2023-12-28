@@ -23,16 +23,6 @@ let isEmpty = queue.isEmpty
 
 /// ------ 基于链表实现的队列 ------
 
-/// 链表节点类
-class ListNode {
-    var val: Int // 节点值
-    var next: ListNode? // 指向下一节点的引用
-    init(val: Int, next: ListNode? = nil) { // 构造函数
-        self.val = val
-        self.next = next
-    }
-}
-
 /// 基于链表实现的队列
 class LinkedListQueue {
     private var front: ListNode? // 头节点
@@ -53,7 +43,7 @@ class LinkedListQueue {
     
     /// 入队
     func push(num: Int) {
-        let node = ListNode(val: num)
+        let node = ListNode(x: num)
         // 如果队列为空，则令头、尾节点都指向该节点
         if front == nil {
             front = node

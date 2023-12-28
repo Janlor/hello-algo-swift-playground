@@ -40,20 +40,6 @@ func loop() {
 
 /* ---------- */
 
-class Pair: Equatable {
-    var key: Int
-    var val: String
-    
-    init(key: Int, val: String) {
-        self.key = key
-        self.val = val
-    }
-    
-    static func == (lhs: Pair, rhs: Pair) -> Bool {
-        lhs.key == rhs.key && lhs.val == rhs.val
-    }
-}
-
 class ArrayHashMap {
     private var buckets: [Pair?] = []
     private let capacity: Int = 100

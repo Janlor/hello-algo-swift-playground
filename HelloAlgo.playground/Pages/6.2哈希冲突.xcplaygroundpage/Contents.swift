@@ -2,20 +2,6 @@
 
 import Foundation
 
-class Pair: Equatable {
-    var key: Int
-    var val: String
-    
-    init(key: Int, val: String) {
-        self.key = key
-        self.val = val
-    }
-    
-    static func == (lhs: Pair, rhs: Pair) -> Bool {
-        lhs.key == rhs.key && lhs.val == rhs.val
-    }
-}
-
 /// 链式地址哈希表
 class HashMapChaining {
     var size: Int // 键值对数量

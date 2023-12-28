@@ -18,5 +18,6 @@
         <page name='7.2二叉树遍历'/>
         <page name='7.3二叉树数组表示'/>
         <page name='7.4二叉搜索树'/>
+        <page name='7.5AVL树'/>
     </pages>
 </playground>

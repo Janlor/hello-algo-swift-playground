@@ -2,17 +2,6 @@
 
 import Foundation
 
-/// 二叉树节点类
-class TreeNode {
-    var val: Int // 节点值
-    var left: TreeNode? // 左子节点引用
-    var right: TreeNode? // 右子节点引用
-    
-    init(x: Int) {
-        self.val = x
-    }
-}
-
 /* 广度优先遍历 */
 
 /// 层序遍历（）
