@@ -3,5 +3,6 @@
     <pages>
         <page name='10.1二分查找'/>
         <page name='10.2二分查找插入点'/>
+        <page name='10.3二分查找边界'/>
     </pages>
 </playground>
