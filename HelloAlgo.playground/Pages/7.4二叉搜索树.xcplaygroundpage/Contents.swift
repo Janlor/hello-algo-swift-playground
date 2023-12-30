@@ -149,24 +149,28 @@ class BinarySearchTree {
 //root.right?.right?.left = TreeNode(x: 13)
 //root.right?.right?.right = TreeNode(x: 15)
 
-
-let tree = BinarySearchTree()
-let nums = [8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]
-for num in nums {
-    tree.insert(num: num)
+func test() {
+    
+    let tree = BinarySearchTree()
+    let nums = [8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]
+    for num in nums {
+        tree.insert(num: num)
+    }
+    print(tree)
+    
+    // 查找节点
+    tree.search(num: 7)
+    
+    // 插入节点
+    //tree.insert(num: 16)
+    
+    // 删除节点
+    //tree.remove(num: 1)
+    //tree.remove(num: 2)
+    //tree.remove(num: 4)
 }
-print(tree)
 
-// 查找节点
-tree.search(num: 7)
-
-// 插入节点
-//tree.insert(num: 16)
-
-// 删除节点
-//tree.remove(num: 1)
-//tree.remove(num: 2)
-//tree.remove(num: 4)
+test()
 
 //: [Next](@next)
 

@@ -77,35 +77,40 @@ class GraphAdjList {
     }
 }
 
-/* 初始化无向图 */
-let v = Vertex.valsToVets(vals: [1, 3, 2, 5, 4])
-let edges = [[v[0], v[1]], [v[0], v[3]], [v[1], v[2]], [v[2], v[3]], [v[2], v[4]], [v[3], v[4]]]
-let graph = GraphAdjList(edges: edges)
-print("\n初始化后，图为")
-graph.print()
+func test() {
+    
+    /* 初始化无向图 */
+    let v = Vertex.valsToVets(vals: [1, 3, 2, 5, 4])
+    let edges = [[v[0], v[1]], [v[0], v[3]], [v[1], v[2]], [v[2], v[3]], [v[2], v[4]], [v[3], v[4]]]
+    let graph = GraphAdjList(edges: edges)
+    print("\n初始化后，图为")
+    graph.print()
+    
+    /* 添加边 */
+    // 顶点 1, 2 即 v[0], v[2]
+    graph.addEdge(vet1: v[0], vet2: v[2])
+    print("\n添加边 1-2 后，图为")
+    graph.print()
+    
+    /* 删除边 */
+    // 顶点 1, 3 即 v[0], v[1]
+    graph.removeEdge(vet1: v[0], vet2: v[1])
+    print("\n删除边 1-3 后，图为")
+    graph.print()
+    
+    /* 添加顶点 */
+    let v5 = Vertex(val: 6)
+    graph.addVertex(vet: v5)
+    print("\n添加顶点 6 后，图为")
+    graph.print()
+    
+    /* 删除顶点 */
+    // 顶点 3 即 v[1]
+    graph.removeVertex(vet: v[1])
+    print("\n删除顶点 3 后，图为")
+    graph.print()
+}
 
-/* 添加边 */
-// 顶点 1, 2 即 v[0], v[2]
-graph.addEdge(vet1: v[0], vet2: v[2])
-print("\n添加边 1-2 后，图为")
-graph.print()
-
-/* 删除边 */
-// 顶点 1, 3 即 v[0], v[1]
-graph.removeEdge(vet1: v[0], vet2: v[1])
-print("\n删除边 1-3 后，图为")
-graph.print()
-
-/* 添加顶点 */
-let v5 = Vertex(val: 6)
-graph.addVertex(vet: v5)
-print("\n添加顶点 6 后，图为")
-graph.print()
-
-/* 删除顶点 */
-// 顶点 3 即 v[1]
-graph.removeVertex(vet: v[1])
-print("\n删除顶点 3 后，图为")
-graph.print()
+test()
 
 //: [Next](@next)

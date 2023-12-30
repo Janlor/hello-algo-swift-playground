@@ -124,32 +124,37 @@ class MaxHeap {
     }
 }
 
-// 初始化大顶堆 
-let maxHeap = MaxHeap(nums: [9, 8, 6, 6, 7, 5, 2, 1, 4, 3, 6, 2])
-print("\n输入列表并建堆后")
-maxHeap.print()
+func test() {
+    
+    // 初始化大顶堆
+    let maxHeap = MaxHeap(nums: [9, 8, 6, 6, 7, 5, 2, 1, 4, 3, 6, 2])
+    print("\n输入列表并建堆后")
+    maxHeap.print()
+    
+    // 获取堆顶元素 
+    var peek = maxHeap.peek()
+    print("\n堆顶元素为 \(peek)")
+    
+    // 元素入堆 
+    let val = 7
+    maxHeap.push(val: val)
+    print("\n元素 \(val) 入堆后")
+    maxHeap.print()
+    
+    // 堆顶元素出堆 
+    peek = maxHeap.pop()
+    print("\n堆顶元素 \(peek) 出堆后")
+    maxHeap.print()
+    
+    // 获取堆大小 
+    let size = maxHeap.size()
+    print("\n堆元素数量为 \(size)")
+    
+    // 判断堆是否为空 
+    let isEmpty = maxHeap.isEmpty()
+    print("\n堆是否为空 \(isEmpty)")
+}
 
-// 获取堆顶元素 
-var peek = maxHeap.peek()
-print("\n堆顶元素为 \(peek)")
-
-// 元素入堆 
-let val = 7
-maxHeap.push(val: val)
-print("\n元素 \(val) 入堆后")
-maxHeap.print()
-
-// 堆顶元素出堆 
-peek = maxHeap.pop()
-print("\n堆顶元素 \(peek) 出堆后")
-maxHeap.print()
-
-// 获取堆大小 
-let size = maxHeap.size()
-print("\n堆元素数量为 \(size)")
-
-// 判断堆是否为空 
-let isEmpty = maxHeap.isEmpty()
-print("\n堆是否为空 \(isEmpty)")
+test()
 
 //: [Next](@next)

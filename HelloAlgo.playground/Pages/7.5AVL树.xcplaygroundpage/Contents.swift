@@ -173,42 +173,44 @@ class AVLTree {
     }
 }
 
-func testInsert(tree: AVLTree, val: Int) {
-    tree.insert(val: val)
-    print("\n 插入节点 \(val) 后，AVL树为")
-    PrintUtil.printTree(root: tree.root)
+func test() {
+    func testInsert(tree: AVLTree, val: Int) {
+        tree.insert(val: val)
+        print("\n 插入节点 \(val) 后，AVL树为")
+        PrintUtil.printTree(root: tree.root)
+    }
+    
+    func testRemove(tree: AVLTree, val: Int) {
+        tree.remove(val: val)
+        print("\n 删除节点 \(val) 后，AVL树为")
+        PrintUtil.printTree(root: tree.root)
+    }
+    
+    let avlTree = AVLTree()
+    testInsert(tree: avlTree, val: 1)
+    testInsert(tree: avlTree, val: 2)
+    testInsert(tree: avlTree, val: 3)
+    testInsert(tree: avlTree, val: 4)
+    testInsert(tree: avlTree, val: 5)
+    testInsert(tree: avlTree, val: 8)
+    testInsert(tree: avlTree, val: 7)
+    testInsert(tree: avlTree, val: 9)
+    testInsert(tree: avlTree, val: 10)
+    testInsert(tree: avlTree, val: 6)
+    
+    // 插入重复节点
+    testInsert(tree: avlTree, val: 7)
+    
+    /* 删除节点 */
+    testRemove(tree: avlTree, val: 8) // 删除度为 0 的节点
+    testRemove(tree: avlTree, val: 5) // 删除度为 1 的节点
+    testRemove(tree: avlTree, val: 4) // 删除度为 2 的节点
+    
+    /* 查询节点 */
+    let node = avlTree.search(val: 7)
+    print("\n查找到的节点对象为 \(node!)，节点值 = \(node!.val)")
 }
 
-func testRemove(tree: AVLTree, val: Int) {
-    tree.remove(val: val)
-    print("\n 删除节点 \(val) 后，AVL树为")
-    PrintUtil.printTree(root: tree.root)
-}
-
-let avlTree = AVLTree()
-testInsert(tree: avlTree, val: 1)
-testInsert(tree: avlTree, val: 2)
-testInsert(tree: avlTree, val: 3)
-testInsert(tree: avlTree, val: 4)
-testInsert(tree: avlTree, val: 5)
-testInsert(tree: avlTree, val: 8)
-testInsert(tree: avlTree, val: 7)
-testInsert(tree: avlTree, val: 9)
-testInsert(tree: avlTree, val: 10)
-testInsert(tree: avlTree, val: 6)
-
-// 插入重复节点
-testInsert(tree: avlTree, val: 7)
-
-/* 删除节点 */
-testRemove(tree: avlTree, val: 8) // 删除度为 0 的节点
-testRemove(tree: avlTree, val: 5) // 删除度为 1 的节点
-testRemove(tree: avlTree, val: 4) // 删除度为 2 的节点
-
-/* 查询节点 */
-let node = avlTree.search(val: 7)
-print("\n查找到的节点对象为 \(node!)，节点值 = \(node!.val)")
-
-
+test()
 
 //: [Next](@next)

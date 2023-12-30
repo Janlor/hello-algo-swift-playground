@@ -90,35 +90,40 @@ class GraphAdjMat {
     }
 }
 
-/* 初始化无向图 */
-// 请注意，edges 元素代表顶点索引，即对应 vertices 元素索引
-let vertices = [1, 3, 2, 5, 4]
-let edges = [[0, 1], [1, 2], [2, 3], [0, 3], [2, 4], [3, 4]]
-let graph = GraphAdjMat(vertices: vertices, edges: edges)
-print("\n初始化后，图为")
-graph.print()
+func test() {
+    
+    /* 初始化无向图 */
+    // 请注意，edges 元素代表顶点索引，即对应 vertices 元素索引
+    let vertices = [1, 3, 2, 5, 4]
+    let edges = [[0, 1], [1, 2], [2, 3], [0, 3], [2, 4], [3, 4]]
+    let graph = GraphAdjMat(vertices: vertices, edges: edges)
+    print("\n初始化后，图为")
+    graph.print()
+    
+    /* 添加边 */
+    // 顶点 1, 2 的索引分别为 0, 2
+    graph.addEdge(i: 0, j: 2)
+    print("\n添加边 1-2 后，图为")
+    graph.print()
+    
+    /* 删除边 */
+    // 顶点 1, 3 的索引分别为 0, 1
+    graph.removeEdge(i: 0, j: 1)
+    print("\n删除边 1-3 后，图为")
+    graph.print()
+    
+    /* 添加顶点 */
+    graph.addVertex(val: 6)
+    print("\n添加顶点 6 后，图为")
+    graph.print()
+    
+    /* 删除顶点 */
+    // 顶点 3 的索引为 1
+    graph.removeVertex(index: 1)
+    print("\n删除顶点 3 后，图为")
+    graph.print()
+}
 
-/* 添加边 */
-// 顶点 1, 2 的索引分别为 0, 2
-graph.addEdge(i: 0, j: 2)
-print("\n添加边 1-2 后，图为")
-graph.print()
-
-/* 删除边 */
-// 顶点 1, 3 的索引分别为 0, 1
-graph.removeEdge(i: 0, j: 1)
-print("\n删除边 1-3 后，图为")
-graph.print()
-
-/* 添加顶点 */
-graph.addVertex(val: 6)
-print("\n添加顶点 6 后，图为")
-graph.print()
-
-/* 删除顶点 */
-// 顶点 3 的索引为 1
-graph.removeVertex(index: 1)
-print("\n删除顶点 3 后，图为")
-graph.print()
+test()
 
 //: [Next](@next)
