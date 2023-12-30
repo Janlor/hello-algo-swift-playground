@@ -23,5 +23,6 @@
         <page name='9.2.1图-邻接矩阵'/>
         <page name='9.2.2图-邻接表'/>
         <page name='9.3.1图的遍历-BFS'/>
+        <page name='9.3.2图的遍历-DFS'/>
     </pages>
 </playground>
