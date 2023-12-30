@@ -20,6 +20,7 @@
         <page name='7.4二叉搜索树'/>
         <page name='7.5AVL树'/>
         <page name='8.1堆'/>
-        <page name='9.2图基础操作'/>
+        <page name='9.2.1图-邻接矩阵'/>
+        <page name='9.2.2图-邻接表'/>
     </pages>
 </playground>
