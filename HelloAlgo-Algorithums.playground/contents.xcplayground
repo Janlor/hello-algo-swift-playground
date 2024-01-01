@@ -7,5 +7,6 @@
         <page name='10.4哈希优化策略'/>
         <page name='11.2选择排序'/>
         <page name='11.3冒泡排序'/>
+        <page name='11.4插入排序'/>
     </pages>
 </playground>
