@@ -8,5 +8,6 @@
         <page name='11.2选择排序'/>
         <page name='11.3冒泡排序'/>
         <page name='11.4插入排序'/>
+        <page name='11.5快速排序'/>
     </pages>
 </playground>
