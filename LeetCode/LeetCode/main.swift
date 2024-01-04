@@ -8,5 +8,5 @@
 import Foundation
 
 //MergeTwoLists().test1()
-ReverseList().test1()
-
+//ReverseList().test1()
+DetectCycle().test1()
