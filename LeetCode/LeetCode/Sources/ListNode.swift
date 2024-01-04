@@ -34,6 +34,7 @@ public class ListNode: Hashable {
         return dum.next
     }
     
+    // 不能打印有环链表
     public func print() {
         var head: ListNode? = self
         var vals: [String] = []

@@ -57,18 +57,55 @@ class DetectCycle {
         return nil
     }
     
+    /// 方法二：快慢指针
+    func detectCycle2(_ head: ListNode?) -> ListNode? {
+        var fast: ListNode? = head
+        var slow: ListNode? = head
+        while true {
+            if fast == nil || slow == nil {
+                return nil
+            }
+            fast = fast?.next?.next
+            slow = slow?.next
+            if fast === slow {
+                break
+            }
+        }
+        fast = head
+        while fast !== slow {
+            fast = fast?.next
+            slow = slow?.next
+        }
+        return fast
+    }
+    
     func test1() {
-        let head = ListNode(3)
-        let node1 = ListNode(2)
-        let node2 = ListNode(0)
-        let node3 = ListNode(-4)
+        let head = ListNode(5)
+        let node1 = ListNode(3)
+        let node2 = ListNode(2)
+        let node3 = ListNode(7)
+        let node4 = ListNode(1)
+        let node5 = ListNode(6)
+        let node6 = ListNode(8)
+        let node7 = ListNode(9)
+        let node8 = ListNode(4)
         
         head.next = node1
         node1.next = node2
         node2.next = node3
-        node3.next = node1 // 环
+        node3.next = node4
+        node4.next = node5
+        node5.next = node6
+        node6.next = node7
+        node7.next = node8
+        node8.next = node4
         
-        let cycle = detectCycle1(head)
-        cycle?.print()
+//        head.print()
+        
+        let cycle = detectCycle2(head)
+        
+        print(cycle?.val)
+//        let cycle = detectCycle1(head)
+//        cycle?.print()
     }
 }
