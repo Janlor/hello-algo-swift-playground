@@ -12,6 +12,7 @@
 		7A4A6B942B4514D4003BD046 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6B932B4514D4003BD046 /* ListNode.swift */; };
 		7A4A6B962B452A5D003BD046 /* 206.反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6B952B452A5D003BD046 /* 206.反转链表.swift */; };
 		7AB992922B46A17C008AC29F /* 142.环形链表II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB992912B46A17C008AC29F /* 142.环形链表II.swift */; };
+		7AB992942B46B8FB008AC29F /* 141.环形链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB992932B46B8FB008AC29F /* 141.环形链表.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		7A4A6B932B4514D4003BD046 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		7A4A6B952B452A5D003BD046 /* 206.反转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "206.反转链表.swift"; sourceTree = "<group>"; };
 		7AB992912B46A17C008AC29F /* 142.环形链表II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "142.环形链表II.swift"; sourceTree = "<group>"; };
+		7AB992932B46B8FB008AC29F /* 141.环形链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "141.环形链表.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				7A4A6B952B452A5D003BD046 /* 206.反转链表.swift */,
 				7AB992912B46A17C008AC29F /* 142.环形链表II.swift */,
 				7A4A6B922B4514BB003BD046 /* Sources */,
+				7AB992932B46B8FB008AC29F /* 141.环形链表.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				7A4A6B912B4514AB003BD046 /* 21.合并两个有序链表.swift in Sources */,
 				7AB992922B46A17C008AC29F /* 142.环形链表II.swift in Sources */,
 				7A4A6B962B452A5D003BD046 /* 206.反转链表.swift in Sources */,
+				7AB992942B46B8FB008AC29F /* 141.环形链表.swift in Sources */,
 				7A4A6B942B4514D4003BD046 /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

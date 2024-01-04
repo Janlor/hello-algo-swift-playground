@@ -104,7 +104,7 @@ class DetectCycle {
         
         let cycle = detectCycle2(head)
         
-        print(cycle?.val)
+        debugPrint(cycle)
 //        let cycle = detectCycle1(head)
 //        cycle?.print()
     }
