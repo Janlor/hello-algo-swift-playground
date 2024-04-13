@@ -42,13 +42,15 @@ func quickSort(nums: inout [Int], left: Int, right: Int) {
 
 /// 选取三个候选元素的中位数
 func medianThree(nums: [Int], left: Int, mid: Int, right: Int) -> Int {
-    if (nums[left] < nums[mid]) != (nums[left] < nums[right]) {
-        return left
-    } else if (nums[mid] < nums[left]) != nums[mid] < nums[right] {
+    let l = nums[left]
+    let m = nums[mid]
+    let r = nums[right]
+    if (m >= l && m <= r) || (m >= r && m <= l) {
         return mid
-    } else {
-        return right
+    } else if (l >= m && l <= r) || (l >= r && l <= m) {
+        return left
     }
+    return right
 }
 
 /// 哨兵划分（三数取中值）
