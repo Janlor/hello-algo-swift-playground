@@ -57,12 +57,8 @@ class ReverseList {
     }
     
     func test1() {
-        let list = ListNode(1)
-        list.next = ListNode(2)
-        list.next?.next = ListNode(3)
-        list.next?.next?.next = ListNode(4)
-        list.next?.next?.next?.next = ListNode(5)
-        list.print()
+        let list = ListNode.arrToLinkedList(arr: [1, 2, 3, 4, 5])
+        list?.print()
 
         let head = reverseList(list)
         head?.print()

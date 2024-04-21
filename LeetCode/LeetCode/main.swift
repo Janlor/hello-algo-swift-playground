@@ -10,4 +10,5 @@ import Foundation
 //MergeTwoLists().test1()
 //ReverseList().test1()
 //DetectCycle().test1()
-HasCycle().test()
+//HasCycle().test()
+SeperatorNode().test()

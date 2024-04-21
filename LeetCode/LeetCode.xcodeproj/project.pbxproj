@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0D3C6C2BD4DB2F00AE1DC2 /* 86.分隔链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D3C6B2BD4DB2F00AE1DC2 /* 86.分隔链表.swift */; };
 		7A4A6B8A2B451483003BD046 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6B892B451483003BD046 /* main.swift */; };
 		7A4A6B912B4514AB003BD046 /* 21.合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6B902B4514AB003BD046 /* 21.合并两个有序链表.swift */; };
 		7A4A6B942B4514D4003BD046 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6B932B4514D4003BD046 /* ListNode.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A0D3C6B2BD4DB2F00AE1DC2 /* 86.分隔链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "86.分隔链表.swift"; sourceTree = "<group>"; };
 		7A4A6B862B451483003BD046 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4A6B892B451483003BD046 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7A4A6B902B4514AB003BD046 /* 21.合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21.合并两个有序链表.swift"; sourceTree = "<group>"; };
@@ -71,8 +73,9 @@
 				7A4A6B902B4514AB003BD046 /* 21.合并两个有序链表.swift */,
 				7A4A6B952B452A5D003BD046 /* 206.反转链表.swift */,
 				7AB992912B46A17C008AC29F /* 142.环形链表II.swift */,
-				7A4A6B922B4514BB003BD046 /* Sources */,
 				7AB992932B46B8FB008AC29F /* 141.环形链表.swift */,
+				7A0D3C6B2BD4DB2F00AE1DC2 /* 86.分隔链表.swift */,
+				7A4A6B922B4514BB003BD046 /* Sources */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4A6B8A2B451483003BD046 /* main.swift in Sources */,
+				7A0D3C6C2BD4DB2F00AE1DC2 /* 86.分隔链表.swift in Sources */,
 				7A4A6B912B4514AB003BD046 /* 21.合并两个有序链表.swift in Sources */,
 				7AB992922B46A17C008AC29F /* 142.环形链表II.swift in Sources */,
 				7A4A6B962B452A5D003BD046 /* 206.反转链表.swift in Sources */,
