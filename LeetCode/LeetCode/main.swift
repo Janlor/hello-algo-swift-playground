@@ -12,4 +12,5 @@ import Foundation
 //DetectCycle().test1()
 //HasCycle().test()
 //SeperatorNode().test()
-DeleteListNode().test()
+//DeleteListNode().test()
+CopyRandomList().test()
