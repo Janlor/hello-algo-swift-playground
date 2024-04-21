@@ -11,4 +11,5 @@ import Foundation
 //ReverseList().test1()
 //DetectCycle().test1()
 //HasCycle().test()
-SeperatorNode().test()
+//SeperatorNode().test()
+DeleteListNode().test()
