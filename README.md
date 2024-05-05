@@ -99,6 +99,8 @@
 
 [11.8桶排序](HelloAlgo-Algorithums.playground/Pages/11.8桶排序.xcplaygroundpage/Contents.swift)
 
+[11.9计数排序](HelloAlgo-Algorithums.playground/Pages/11.9计数排序.xcplaygroundpage/Contents.swift)
+
 ### 12.分治
 
 ### 13.回溯

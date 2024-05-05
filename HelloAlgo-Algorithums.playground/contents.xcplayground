@@ -12,5 +12,6 @@
         <page name='11.6归并排序'/>
         <page name='11.7堆排序'/>
         <page name='11.8桶排序'/>
+        <page name='11.9计数排序'/>
     </pages>
 </playground>
