@@ -97,6 +97,8 @@
 
 [11.7堆排序](HelloAlgo-Algorithums.playground/Pages/11.7堆排序.xcplaygroundpage/Contents.swift)
 
+[11.8桶排序](HelloAlgo-Algorithums.playground/Pages/11.8桶排序.xcplaygroundpage/Contents.swift)
+
 ### 12.分治
 
 ### 13.回溯
