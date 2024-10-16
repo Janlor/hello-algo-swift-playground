@@ -105,6 +105,8 @@
 
 ### 12.分治
 
+[12.2分治搜索策略](HelloAlgo-Algorithums.playground/Pages/12.2分治搜索策略.xcplaygroundpage/Contents.swift)
+
 ### 13.回溯
 
 ### 14.动态规划
